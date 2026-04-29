@@ -1,0 +1,31 @@
+baseURL = "https://agencyoutfitter.com/"
+languageCode = "en-us"
+title = "Agency Outfitter"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "Tools and services for independent insurance agencies."
+  author = "Agency Outfitter"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "Agency Outfitter"
+    Content = "Tools and services for independent insurance agencies."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hello@agencyoutfitter.com"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
